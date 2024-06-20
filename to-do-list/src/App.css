@@ -1,4 +1,64 @@
+.App { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(216, 180, 173, 0.28);
+
+}
+
+.container{ 
+  display: flex;
+  flex-direction: column;
+  border: 2px black solid;
+  height: 500px;
+  margin-top: 100px;
+  background-color: white;
+}
+.headerOfTheList { 
+  display: flex;
+  height: 60px;
+
+}
+.listOfTasks{ 
+  height: 380px;
+} 
+.listFooter{ 
+  display: flex;
+  font-size: 20px;
+  font-weight: bold; 
+
+}
+.image{
+  height: 50px;
+  width: 50px;
+}
+.enterText{
+  width: 450px;
+  font-size: 40px;
+}
+.button{ 
+  width: 150px;
+  font-size: 25px; 
+
+}
+.itemNotDone{ 
+  margin-bottom: 20px;
+}
+.itemNotDone, .done {
+  font-size: 35px;
+}
+
+
 .done{ 
   text-decoration: line-through;
   cursor: pointer;
+  margin-bottom: 20px;
+} 
+
+ul{ 
+  /* list-style-type: square; */
+  list-style-type:square;
+
 }
