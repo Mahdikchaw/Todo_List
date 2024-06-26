@@ -11,54 +11,97 @@
 .container{ 
   display: flex;
   flex-direction: column;
-  border: 2px black solid;
-  height: 500px;
-  margin-top: 100px;
+  border: 0.5px black solid;
+  height: 550px;
+  width: 600px;
+  margin-top: 150px;
   background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 
+  0 6px 6px rgba(0, 0, 0, 0.23);
+  
 }
 .headerOfTheList { 
   display: flex;
   height: 60px;
+  
 
 }
 .listOfTasks{ 
-  height: 380px;
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  overflow-y: auto; /* Enable scrolling when content exceeds height */
 } 
 .listFooter{ 
   display: flex;
   font-size: 20px;
   font-weight: bold; 
+  margin-left: 15px;
 
 }
-.image{
-  height: 50px;
-  width: 50px;
-}
-.enterText{
-  width: 450px;
-  font-size: 40px;
-}
-.button{ 
-  width: 150px;
-  font-size: 25px; 
-
-}
-.itemNotDone{ 
-  margin-bottom: 20px;
-}
-.itemNotDone, .done {
+li{ 
+  color: black;
+  font-family: Arial, sans-serif;
   font-size: 35px;
+  
+  list-style-type: none;
+
+}
+li:hover{
+  cursor: pointer;
 }
 
+
+.enterText{
+  flex-grow: 1;
+  font-size: 35px;
+  padding: 17px; /* Add padding inside the input field */
+  font-family: Arial, sans-serif;
+  color: rgb(90, 70, 90);
+
+
+}
+
+
+
+.itemNotDone{ 
+  margin-bottom: 10px;
+}
 
 .done{ 
   text-decoration: line-through;
   cursor: pointer;
-  margin-bottom: 20px;
-} 
+  margin-bottom: 10px;
+}
 
-ul{ 
-  /* list-style-type: square; */
-  list-style-type:square;
+
+
+.task{ 
+  display: flex;
+  
+  
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: black solid;
+  border-radius: 50% ;
 
 }
+.circle:hover{
+  background-color: navy;
+  cursor: pointer;
+}
+.circleContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  
+}
+
+.description{
+  margin-bottom: 10px;
+}
+
+
